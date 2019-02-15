@@ -2,7 +2,6 @@
 using Android.Content.PM;
 using Android.OS;
 
-using Xamarin.Forms.Platform.Android;
 
 namespace FieldEngineerLite.Droid
 {
@@ -11,7 +10,7 @@ namespace FieldEngineerLite.Droid
         MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         Theme = "@android:style/Theme.Holo.Light")]
-    public class MainActivity : FormsApplicationActivity
+    public class MainActivity : FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {

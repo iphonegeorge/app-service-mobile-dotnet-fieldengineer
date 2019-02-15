@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldEngineerLite.iOS", "FieldEngineerLite.iOS\FieldEngineerLite.iOS.csproj", "{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}"
 EndProject
@@ -11,9 +11,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FieldEngineerLite", "FieldE
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		FieldEngineerLite\FieldEngineerLite.projitems*{f1003602-a8b5-4dc9-b601-99711543ff2e}*SharedItemsImports = 13
-		FieldEngineerLite\FieldEngineerLite.projitems*{bdfab9d7-f1a2-401d-8260-9f593ad288c6}*SharedItemsImports = 4
 		FieldEngineerLite\FieldEngineerLite.projitems*{59a5b44a-f4ec-4468-8695-bc5f2846f9ce}*SharedItemsImports = 4
+		FieldEngineerLite\FieldEngineerLite.projitems*{bdfab9d7-f1a2-401d-8260-9f593ad288c6}*SharedItemsImports = 4
+		FieldEngineerLite\FieldEngineerLite.projitems*{f1003602-a8b5-4dc9-b601-99711543ff2e}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhone Simulator = Debug|iPhone Simulator
@@ -41,6 +41,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8678E540-E6BA-4473-AB60-4E2845750E44}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

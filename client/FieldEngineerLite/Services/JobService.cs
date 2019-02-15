@@ -19,8 +19,8 @@ namespace FieldEngineerLite
         private IMobileServiceSyncTable<Job> jobTable;
 
         // Placeholder string for Try App Service is ZUMOAPPURL
-        // To use with your own app, use URL in the form https://your-site-name.azurewebsites.net/
-        private const string MobileUrl = "ZUMOAPPURL";
+        // To use with your own app, use URL in the form https://mydaddyfixesengineer.azurewebsites.net/
+        private const string MobileUrl = "https://mydaddyfixesengineer.azurewebsites.net/";
 
         public async Task InitializeAsync()
         {
