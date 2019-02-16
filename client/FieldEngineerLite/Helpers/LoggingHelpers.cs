@@ -18,14 +18,14 @@ namespace FieldEngineerLite.Helpers
             this.logParameters = logParameters;
         }
 
-        protected override IList<Newtonsoft.Json.Linq.JObject> ExecuteQueryInternal(string tableName, string sql, IDictionary<string, object> parameters)
+        protected override IList<Newtonsoft.Json.Linq.JObject> ExecuteQuery(string tableName, string sql, IDictionary<string, object> parameters)
         {
             Debug.WriteLine (sql);   
 
             if(logParameters)
                 PrintDictionary (parameters);
 
-            var result = base.ExecuteQueryInternal(tableName, sql, parameters);
+            var result = base.ExecuteQuery(tableName, sql, parameters);
 
             if (logResults && result != null) 
             {
@@ -36,14 +36,14 @@ namespace FieldEngineerLite.Helpers
             return result;
         }
 
-        protected override void ExecuteNonQueryInternal(string sql, IDictionary<string, object> parameters)
+        protected override void ExecuteNonQuery(string sql, IDictionary<string, object> parameters)
         {
             Debug.WriteLine (sql);
 
             if(logParameters)
                 PrintDictionary (parameters);
 
-            base.ExecuteNonQueryInternal(sql, parameters);
+            base.ExecuteNonQuery(sql, parameters);
         }
 
         private void PrintDictionary(IDictionary<string,object> dictionary)
