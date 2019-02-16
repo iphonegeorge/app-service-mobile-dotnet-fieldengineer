@@ -8,6 +8,7 @@ using FieldEngineerLite.Helpers;
 using FieldEngineerLite.Models;
 using Microsoft.WindowsAzure.MobileServices.Eventing;
 using System.Diagnostics;
+using System.IO;
 
 namespace FieldEngineerLite
 {
@@ -27,8 +28,21 @@ namespace FieldEngineerLite
         {
             this.MobileService = 
                 new MobileServiceClient(MobileUrl, new LoggingHandler());
+            
+            //   string filename = "local.db";
+            //   string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            //   string libraryPath = Path.Combine(documentsPath, "..", "Library");
+            //   var path = Path.Combine(libraryPath, filename);
+            //   var path = Path.Combine(documentsPath, filename);
+
+            //  if (!File.Exists(path))
+            //  {
+            //      File.Create(path).Dispose();
+            //  }
+            //var store = new MobileServiceSQLiteStore(path);
 
             var store = new MobileServiceSQLiteStore("local.db");
+
             store.DefineTable<Job>();
 
             await MobileService.SyncContext.InitializeAsync(store, StoreTrackingOptions.NotifyLocalAndServerOperations);
