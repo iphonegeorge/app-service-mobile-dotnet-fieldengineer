@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldEngineerLite.iOS", "FieldEngineerLite.iOS\FieldEngineerLite.iOS.csproj", "{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}"
 EndProject
@@ -11,36 +11,60 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FieldEngineerLite", "FieldE
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		FieldEngineerLite\FieldEngineerLite.projitems*{f1003602-a8b5-4dc9-b601-99711543ff2e}*SharedItemsImports = 13
-		FieldEngineerLite\FieldEngineerLite.projitems*{bdfab9d7-f1a2-401d-8260-9f593ad288c6}*SharedItemsImports = 4
 		FieldEngineerLite\FieldEngineerLite.projitems*{59a5b44a-f4ec-4468-8695-bc5f2846f9ce}*SharedItemsImports = 4
+		FieldEngineerLite\FieldEngineerLite.projitems*{bdfab9d7-f1a2-401d-8260-9f593ad288c6}*SharedItemsImports = 4
+		FieldEngineerLite\FieldEngineerLite.projitems*{f1003602-a8b5-4dc9-b601-99711543ff2e}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhone Simulator = Debug|iPhone Simulator
 		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|iPhone Simulator = Release|iPhone Simulator
 		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|iPhone Simulator.ActiveCfg = Debug|iPhoneSimulator
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|iPhone Simulator.Build.0 = Debug|iPhoneSimulator
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
+		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|x64.ActiveCfg = Debug|x64
+		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Debug|x86.ActiveCfg = Debug|iPhone
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|iPhone Simulator.ActiveCfg = Release|iPhoneSimulator
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|iPhone Simulator.Build.0 = Release|iPhoneSimulator
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|Mixed Platforms.ActiveCfg = Release|iPhoneSimulator
 		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|Mixed Platforms.Build.0 = Release|iPhoneSimulator
+		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|x64.ActiveCfg = Release|x64
+		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|x64.Build.0 = Release|x64
+		{59A5B44A-F4EC-4468-8695-BC5F2846F9CE}.Release|x86.ActiveCfg = Release|iPhone
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|iPhone Simulator.ActiveCfg = Debug|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x64.ActiveCfg = Debug|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x64.Build.0 = Debug|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x64.Deploy.0 = Debug|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x86.ActiveCfg = Debug|x86
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x86.Build.0 = Debug|x86
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Debug|x86.Deploy.0 = Debug|x86
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|iPhone Simulator.ActiveCfg = Release|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x64.ActiveCfg = Release|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x64.Build.0 = Release|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x64.Deploy.0 = Release|x64
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x86.ActiveCfg = Release|x86
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x86.Build.0 = Release|x86
+		{BDFAB9D7-F1A2-401D-8260-9F593AD288C6}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB0BEFC0-4F33-438B-B429-AADDBF9F1F0F}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
