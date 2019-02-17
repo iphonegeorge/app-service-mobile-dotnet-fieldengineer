@@ -25,13 +25,12 @@
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>True</MtouchDebug>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>x86_64</MtouchArch>
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchI18n>
     </MtouchI18n>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignProvision>1e0236de-4093-43d5-8571-7952d4437b6c</CodesignProvision>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
     <MtouchSdkVersion>12.1</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -42,7 +41,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
+    <MtouchArch>x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <Optimize>false</Optimize>
@@ -53,10 +52,8 @@
     </IpaPackageName>
     <MtouchI18n>
     </MtouchI18n>
-    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchSdkVersion>8.3</MtouchSdkVersion>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -66,7 +63,6 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
@@ -78,7 +74,6 @@
     <ConsolePause>False</ConsolePause>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <BuildIpa>True</BuildIpa>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
@@ -89,7 +84,6 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
     <CodesignKey>iPhone Distribution</CodesignKey>
-    <AssemblyName>FieldEngineerLiteiOS</AssemblyName>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
