@@ -14,10 +14,16 @@ namespace FieldEngineerLite
             eta.VerticalTextAlignment = TextAlignment.Start;
             eta.SetBinding<Job>(Label.TextProperty, job => job.StartTime, stringFormat: "Start time: {0}");
 
+            var date = new Label();
+            date.VerticalOptions = LayoutOptions.FillAndExpand;
+            date.HorizontalOptions = LayoutOptions.FillAndExpand;
+            date.VerticalTextAlignment = TextAlignment.Start;
+            date.SetBinding<Job>(Label.TextProperty, job => job.Date, stringFormat: "Date: {0}");
+
             var rootLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
+                Orientation = StackOrientation.Vertical,
                 Padding = new Thickness(leftPadding, 5, 0, 5),
-                Children = { eta }
+                Children = { date, eta }
             };
 
             if (colorBackground) {

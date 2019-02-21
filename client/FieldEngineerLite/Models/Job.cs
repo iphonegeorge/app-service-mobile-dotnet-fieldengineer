@@ -25,6 +25,7 @@ namespace FieldEngineerLite.Models
         public string Id { get; set; }
         public string AgentId { get; set; }
         public string JobNumber { get; set; }
+        public String Date { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
         public string Title { get; set; }

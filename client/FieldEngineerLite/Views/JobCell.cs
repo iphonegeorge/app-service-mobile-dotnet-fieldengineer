@@ -55,7 +55,7 @@ namespace FieldEngineerLite.Views
                 }
             };
 
-            this.Height = 120;
+            this.Height = Device.GetNamedSize(NamedSize.Small, typeof(Label)) * 11;
             this.View = rootLayout;
         }
     }
