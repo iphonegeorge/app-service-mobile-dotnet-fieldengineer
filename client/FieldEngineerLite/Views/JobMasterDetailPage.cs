@@ -33,8 +33,8 @@ namespace FieldEngineerLite
             var listNavigationPage = new MyNavigationPage(listPage);
             listNavigationPage.Title = "Appointments";
             Master = listNavigationPage;
-            JobDetailsPage details = new JobDetailsPage(jobService);
 
+            JobDetailsPage details = new JobDetailsPage(jobService);
             details.Content.IsVisible = false;
             Detail = new MyNavigationPage(details);
         }
