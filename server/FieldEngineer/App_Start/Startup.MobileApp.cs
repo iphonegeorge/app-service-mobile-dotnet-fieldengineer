@@ -7,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using FieldEngineerLiteService.Models;
 using Microsoft.Azure.Mobile.Server.Config;
+using FieldEngineer.Migrations;
 using Owin;
 
 namespace FieldEngineer
@@ -28,8 +29,9 @@ namespace FieldEngineer
                 .UseDefaultConfiguration()
                 .ApplyTo(config);
 
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<JobDbContext, Configuration>());
 
-            Database.SetInitializer(new JobDbContextInitializer());
+            //Database.SetInitializer(new JobDbContextInitializer());
 
             app.UseWebApi(config);
 
