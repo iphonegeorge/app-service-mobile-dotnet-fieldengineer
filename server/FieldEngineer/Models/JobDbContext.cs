@@ -48,29 +48,29 @@ namespace FieldEngineerLiteService.Models
 
         }
     }
-
-#if TRY_APP_SERVICE
-    public class JobDbContextInitializer : DropCreateDatabaseAlways<JobDbContext>
-#else
-    public class JobDbContextInitializer : CreateDatabaseIfNotExists<JobDbContext>
-#endif
-    {
-        protected override void Seed(JobDbContext context)
-        {
-            List<Job> jobs = new List<Job>
-            {
-                new Job {Title = "Install Deluxe DVR box",Date = "26/2/2019", StartTime = "10:30am", CustomerName = "Chris Anderson", CustomerAddress = "123 Fake St", CustomerPhoneNumber = "3079876543"},
-                new Job {Title = "Cable box outside is missing",Date = "25/2/2019", StartTime = "10:30am", CustomerName = "Kirill Gavrylyuk", CustomerAddress = "987 Real St", CustomerPhoneNumber = "4251234567"},
-                new Job {Title = "Add Cable to new room",Date = "24/2/2019", StartTime = "10:30am", CustomerName = "Donna Malayeri", CustomerAddress = "456 3rd Dimension", CustomerPhoneNumber = "7860987432"},
-                new Job {Title = "Approve free Cable for my employees",Date = "23/2/2019", StartTime = "10:30am", CustomerName = "Bill Staples", CustomerAddress = "777 Best Boss Dr.", CustomerPhoneNumber = "4259829322"}
-            };
-
-            foreach (Job job in jobs)
-            {
-                context.Set<Job>().Add(job);
-            }
-            
-            base.Seed(context);
-        }
-    }
+    
+//#if TRY_APP_SERVICE
+//    public class JobDbContextInitializer : DropCreateDatabaseAlways<JobDbContext>
+//#else
+//    public class JobDbContextInitializer : CreateDatabaseIfNotExists<JobDbContext>
+//#endif
+ //   {
+ //       protected override void Seed(JobDbContext context)
+ //       {
+ //           List<Job> jobs = new List<Job>
+ //           {
+ //               new Job {Title = "Install Deluxe DVR box",Date = "26/2/2019", StartTime = "10:30am", CustomerName = "Chris Anderson", CustomerAddress = "123 Fake St", CustomerPhoneNumber = "3079876543"},
+ //               new Job {Title = "Cable box outside is missing",Date = "25/2/2019", StartTime = "10:30am", CustomerName = "Kirill Gavrylyuk", CustomerAddress = "987 Real St", CustomerPhoneNumber = "4251234567"},
+ //               new Job {Title = "Add Cable to new room",Date = "24/2/2019", StartTime = "10:30am", CustomerName = "Donna Malayeri", CustomerAddress = "456 3rd Dimension", CustomerPhoneNumber = "7860987432"},
+ //               new Job {Title = "Approve free Cable for my employees",Date = "23/2/2019", StartTime = "10:30am", CustomerName = "Bill Staples", CustomerAddress = "777 Best Boss Dr.", CustomerPhoneNumber = "4259829322"}
+ //           };
+ //
+ //           foreach (Job job in jobs)
+ //           {
+ //               context.Set<Job>().Add(job);
+ //           }
+ //           
+ //           base.Seed(context);
+ //       }
+ //   } 
 }

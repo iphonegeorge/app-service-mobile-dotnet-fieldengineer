@@ -244,6 +244,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902221021423_Initial.cs" />
+    <Compile Include="Migrations\201902221021423_Initial.Designer.cs">
+      <DependentUpon>201902221021423_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JobDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -305,7 +309,11 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902221021423_Initial.resx">
+      <DependentUpon>201902221021423_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Placeholder.txt" />
   </ItemGroup>

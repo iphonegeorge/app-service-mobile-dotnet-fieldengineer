@@ -67,6 +67,7 @@ namespace FieldEngineerLiteService.DataObjects
 
         public string Date { get; set; }
         public string BillableHours { get; set; }
+        public string DataEntered { get; set; }
     }
 
 }
